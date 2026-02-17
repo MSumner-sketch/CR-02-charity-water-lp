@@ -1,47 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water | Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <img src="img/logo.png" alt="charity: water logo" class="brand__logo" />
+      <span class="brand__name">charity: water</span>
+    </a>
+  </header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <main class="hero">
+    <!-- Background image lives in CSS -->
+
+    <div class="hero__overlay"></div>
+
+    <section class="hero__content">
+      <!-- Left side (empty on purpose because your mock is mostly photo) -->
+      <div class="hero__left" aria-hidden="true"></div>
+
+      <!-- Right side: card -->
+      <div class="card">
+        <h1 class="card__title">See the<br />Impact.</h1>
+
+        <p class="card__subtitle">
+          charity: water documents every clean water project with verified data,
+          photos, and GPS tracking — so you know exactly what your support achieves.
+        </p>
+
+        <div class="tabs" role="tablist" aria-label="Donation frequency">
+          <button class="tab tab--active" type="button" aria-selected="true">
+            GIVE ONCE
+          </button>
+          <button class="tab" type="button" aria-selected="false">
+            MONTHLY
+          </button>
         </div>
-    </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+        <div class="panel">
+          <p class="panel__label">Choose an amount to give per month</p>
+
+          <div class="amount-grid">
+            <button class="amount" type="button">$10 <span>USD/mo</span></button>
+            <button class="amount" type="button">$20 <span>USD/mo</span></button>
+            <button class="amount amount--active" type="button">$40 <span>USD/mo</span></button>
+            <button class="amount" type="button">$100 <span>USD/mo</span></button>
+            <button class="amount amount--wide" type="button">Other amount</button>
+          </div>
+
+          <a class="cta" href="#">JOIN TODAY</a>
+
+          <p class="fineprint">
+            Your <strong>$40.00</strong> monthly donation can give <strong>12</strong> people clean water
+            every year. 100% funds water projects.
+          </p>
+        </div>
+      </div>
     </section>
+  </main>
+
 </body>
 </html>
+
